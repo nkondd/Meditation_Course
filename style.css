@@ -5,6 +5,7 @@
   --header-height: 3.5rem;
 
   --body-color: #FCFCFC;
+  --red-color: #885050;
 
   --z-tooltip: 10;
   --z-fixed: 1;
@@ -68,27 +69,66 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+}
+
+.item__email {
+  background-size: cover;
+  background-image: url(./img/mail.svg);
+  width: 33px;
+  height: 33px;
+  transition: all 0.25s;
+}
+
+.item__email:hover {
+  background-image: url(./img/mail_hover.svg);
+}
+
+.item__telegram {
+  background-size: cover;
+  background-image: url(./img/telegram.svg);
+  width: 33px;
+  height: 33px;
+  transition: all 0.25s;
+}
+
+.item__telegram:hover {
+  background-image: url(./img/telegram_hover.svg);
+}
+
+.item__instagram {
+  background-size: cover;
+  background-image: url(./img/instagram.svg);
+  width: 33px;
+  height: 33px;
+  transition: all 0.25s;
+}
+
+.item__instagram:hover {
+  background-image: url(./img/instagram_hover.svg);
 }
 
 /* BUTTON JOIN */
-.bn39 {
+.item__button {
   display: inline-block;
   padding: 0.6em 1.7em;
-  border: 2px solid #954c4c;
-  border-radius: 0.2em;
+  border: 2px solid transparent;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  border-radius: 0.35em;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  color: #ffffff;
+  color: rgb(85, 133, 135);
   text-align: center;
   transition: all 0.2s;
-  background-color: #954c4c;
+  background-color: #fff;
 }
 
-.bn39:hover {
-  background-color: #903131;
+.item__button:hover {
+  background-color: var(--red-color);
+  color: #fff;
 }
 
 .button__join {
@@ -128,7 +168,8 @@ li {
   align-items: center;
 
   padding: 0px 16px;
-  background-color: rgba(100, 166, 169, 0.9);
+  background-color: rgba(85, 133, 135, 0.99);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);;
 }
 
 .sticky {
@@ -153,6 +194,19 @@ li {
 }
 
 /* MENU */
+.hamburger-menu {
+  width: 80px;
+}
+
+.menu__text {
+  text-align: end;
+  position: absolute;
+  left: 55px;
+  top: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
 #menu__toggle {
   opacity: 0;
   width: 30px;
@@ -325,4 +379,41 @@ li {
 .arrows path.a3 { 
   animation-delay:0s;
   -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/* Tooltip */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: var(--red-color);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  left: 125%;
+  top: 120%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
