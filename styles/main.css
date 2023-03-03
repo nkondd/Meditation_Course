@@ -1,0 +1,12 @@
+/* UTILS */
+@import url(./utils/_vars.css);
+@import url(./utils/_reset.css);
+@import url(./utils/_normalize.css);
+
+/* BLOCKS */
+@import url(./blocks/navigation.css);
+@import url(./blocks/btn_register.css);
+@import url(./blocks/header.css);
+@import url(./blocks/section-container.css);
+@import url(./blocks/home_section.css);
+@import url(./blocks/about-us_section.css);

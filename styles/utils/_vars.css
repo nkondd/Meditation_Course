@@ -1,0 +1,11 @@
+/* ===== Colours ===== */
+:root {
+    --body-color: #f7f7f7;
+    --nav-color: rgb(85, 133, 135);
+    --side-nav: rgb(85, 133, 135);
+    --text-color: #FFF;
+    --text-color--dark: #1c1c1c;
+    --red-color: #885050;
+    --yellow-color: #faf0a6;
+  }
+  
