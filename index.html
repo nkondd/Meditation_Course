@@ -13,7 +13,7 @@
       href="./img/ icon.ico"
     />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles/blocks/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header">
@@ -40,8 +40,8 @@
                     <li><a href="#home">Що це?</a></li>
                     <li><a href="#about-course">Про курс</a></li>
                     <li><a href="#results">Що ви отримаєте?</a></li>
-                    <li><a href="#">Техніки медитації</a></li>
-                    <li><a href="#">Деталі курсу</a></li>
+                    <li><a href="#techniques">Техніки медитації</a></li>
+                    <li><a href="#details">Деталі курсу</a></li>
                     <li><a href="#">Про нас</a></li>
                     <li><a href="#">Контакти</a></li>
                 </ul>
@@ -77,188 +77,327 @@
       </div>
     </header>
 
-    <section class="home section-container">
-      <div class="home__quote">
-        <h1 id="home">
+    <section class="home section-container" id="home">
+      <div class="section__quote">
+        <h1>
           Проєкт підтримки українських біженців
          </h1>
 
-         <h1 class="home__quote-blue">Команда фонду<br>
+         <h1 class="section__quote-blue">Команда фонду<br>
             «Compassion and Wisdom»
           </h1>
       </div>
 
-       <div class="home__personal">
-         <div class="home__quote-personal--img"></div>
-         <h3 class="home__quote-personal">Люди в Україні роблять цю практику, найчастіше сидячи в бомбосховищі - що неймовірно складно навіть уявити. І вони кажуть, що відчувають, як практика корисна для їхнього життя.</h3>
+       <div class="section__personal">
+         <div class="section__quote-personal--img"></div>
+         <h3 class="section__quote-personal">Люди в Україні роблять цю практику, найчастіше сидячи в бомбосховищі - що неймовірно складно навіть уявити. І вони кажуть, що відчувають, як практика корисна для їхнього життя.</h3>
        </div>
 
-       <p class="home__text">Це <span>прості у виконанні</span> і <span>доступні кожному</span> медитативні техніки, які не мають аналогів.</p>
-       <p class="home__text">Курс розроблено на базі унікальної 5-ти частинної практики, створеної і розробленої для підтримки українців Фасилітатором Фонду розвитку співчуття та мудрості (FDCW – ФРСМ) на прохання українських фахівців, які надають психологічну допомогу біженцям та тимчасово переміщеним.</p>
+       <p class="section__text"><span>Це прості у виконанні і доступні кожному медитативні техніки, які не мають аналогів.</span></p>
+       <p class="section__text">Курс розроблено на базі унікальної 5-ти частинної практики, створеної і розробленої для підтримки українців Фасилітатором Фонду розвитку співчуття та мудрості (FDCW – ФРСМ) на прохання українських фахівців, які надають психологічну допомогу біженцям та тимчасово переміщеним.</p>
 
 
     </section>
 
-    <section class="about-course section-container about-course--section-container" id="about-course">
-      <div class="about-course__quote">
+    <section class="about-course section-container" id="about-course">
+      <div class="section__quote">
         <h1>
           Про курс
         </h1>
         <span></span>
       </div>
     
-      <div class="about-course__container">
-        <p class="about-course__text">Курс медитативних практик <span>«Відкриття глибинного ресурсу»</span> спрямованих на те, щоб впоратися з:</p>
-        <div class="about-course__text--container">
-          <ul class="about-course__list">
-            <li class="about-course__item">
+      <div class="section__container">
+        <p class="section__text">Курс медитативних практик <span>«Відкриття глибинного ресурсу»</span> спрямованих на те, щоб впоратися з:</p>
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
               <div class="number">1</div>
-              <p class="about-course__text content">Почуттям втрати перспективи та внутрішньої опори</p>
+              <p class="section__text content">Почуттям втрати перспективи та внутрішньої опори</p>
             </li>
 
-            <li class="about-course__item">
+            <li class="section__item">
               <div class="number">2</div>
-              <p class="about-course__text content">Зі станом страху щодо майбутнього</p>
+              <p class="section__text content">Зі станом страху щодо майбутнього</p>
             </li>
 
-            <li class="about-course__item">
+            <li class="section__item">
               <div class="number">3</div>
-              <p class="about-course__text content">Зі станом безсилля щось робити</p>
+              <p class="section__text content">Зі станом безсилля щось робити</p>
             </li>
 
-            <li class="about-course__item">
+            <li class="section__item">
               <div class="number">4</div>
-              <p class="about-course__text content">Зі станом безсилля вирішувати життєві завдання у сьогоднішніх реаліях</p>
+              <p class="section__text content">Зі станом безсилля вирішувати життєві завдання у сьогоднішніх реаліях</p>
             </li>
           </ul>
           <img 
-          class="about-course__text--img"
+          class="section__text--img"
           src="./img/photo/about-course_war.jpg" 
           alt="Pобота з травмою у контексті воєнного часу"
           >
         </div>
       </div>
       
-      <div class="about-course__container">
-        <p class="about-course__text">Це робота з травмою у контексті воєнного часу та зниження ризику виникнення наслідків гострого стресу та ПТСР.</p>
+      <div class="section__container">
+        <p class="section__text">Це робота з травмою у контексті воєнного часу та зниження ризику виникнення наслідків гострого стресу та ПТСР.</p>
       </div>
 
     </section>
     
-    <section class="results section-container about-course--section-container" id="results">
-      <div class="results__quote">
+    <section class="results section-container" id="results">
+      <div class="section__quote">
         <h1>
           Що ви отримаєте?
         </h1>
         <span></span>
       </div>
       
-      <p class="results__text">Наприкінці проходження курсу ви отримаєте подвійний результат + техніки для самостійної внутрішньої роботи та допомоги собі та іншим.</p>
+      <p class="section__text">Наприкінці проходження курсу ви отримаєте подвійний результат + техніки для самостійної внутрішньої роботи та допомоги собі та іншим.</p>
       
-      <div class="results__container">
-        <div class="results__text--and-icon">
-          <div class="results__icon">🌿</div>
-          <p class="results__text">
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
              Результати внутрішні, пов'язані з оновленим внутрішнім станом:
           </p>
         </div>
 
-        <div class="results__text--container">
-          <ul class="results__list">
-            <li class="results__item">
-              <div class="number">1</div>
-              <p class="results__text content">налагодиться глибокий і спокійний сон</p>
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">налагодиться глибокий і спокійний сон</p>
             </li>
 
-            <li class="results__item">
-              <div class="number">2</div>
-              <p class="results__text content">знизиться рівень тривожності, занепокоєння та страху</p>
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">знизиться рівень тривожності, занепокоєння та страху</p>
             </li>
 
-            <li class="results__item">
-              <div class="number">3</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 знайдемо навички, як впоратися з негативними емоціями
               </p>
             </li>
 
-            <li class="results__item">
-              <div class="number">4</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 знизиться вплив стресу на фізичному та емоційному рівні
               </p>
             </li>
 
-            <li class="results__item">
-              <div class="number">5</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 підвищиться рівень внутрішнього спокою та врівноваженості
               </p>
             </li>
           </ul>
           <img 
-          class="results__text--img"
+          class="section__text--img"
           src="./img/photo/results1.jpg" 
           alt="Pобота з травмою у контексті воєнного часу"
           >
         </div>
       </div>
 
-      <div class="results__container">
-        <div class="results__text--and-icon">
-          <div class="results__icon">🌿</div>
-          <p class="results__text">
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
             Результати зовнішні, які пов'язані із зовнішніми подіями, справами та особистим життям
           </p>
         </div>
 
-        <div class="results__text--container">
-          <ul class="results__list">
-            <li class="results__item">
-              <div class="number">1</div>
-              <p class="results__text content">
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 навчитеся вирішувати складні життєві завдання спокійніше, дбайливо та легко
               </p>
             </li>
 
-            <li class="results__item">
-              <div class="number">2</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 зможете знову побачити сенс життя в кожному новому дні та в перспективі у цілому
               </p>
             </li>
 
-            <li class="results__item">
-              <div class="number">3</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 дізнаєтесь, як «перетворити» енергію найбільш кризових контекстів життя на нові ідеї та можливості
               </p>
             </li>
 
-            <li class="results__item">
-              <div class="number">4</div>
-              <p class="results__text content">
+            <li class="section__item">
+              <div class="number">✔️</div>
+              <p class="section__text content">
                 знайдете усвідомлення, що є справжнім джерелом конфліктів та зіпсованих відносин із близькими людьми. Зможете відновити стосунки з людьми через деякі внутрішні зміни у собі.
               </p>
             </li>
           </ul>
           <img 
-          class="results__text--img"
+          class="section__text--img"
           src="./img/photo/results2.jpg" 
           alt="Pобота з травмою у контексті воєнного часу"
           >
         </div>
       </div>
       
-      <div class="results__container">
-        <div class="results__text--and-icon">
-          <div class="results__icon">🌿</div>
-          <p class="results__text">
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🌿</div>
+          <p class="section__text">
             Також, як результат роботи на курсі ви зможете спокійно просунутися у вирішенні ваших реальних життєвих завдань, тому що всі тренування та практичні сесії ви виконуватимете на актуальних для вас проблемах та життєвих завданнях.
           </p>
         </div>
       </div>
 
+    </section>
+
+    <section class="techniques section-container" id="techniques">
+      <div class="section__quote">
+        <h1>
+          Техніки медитації
+        </h1>
+        <span></span>
+      </div>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🧘🏼‍♀️</div>
+          <p class="section__text">
+            4 техніки сучасної науково обґрунтованої медитації:
+          </p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">1</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Медитативна практика «Глибокий та здоровий сон»</span>
+                </p>
+                <p class="section__text description">
+                  Дозволяє подолати безсоння та досягти якісного спокійного та мирного сну.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">2</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Медитація «Зниження фізичного та емоційного стресу»</span>
+                </p>
+                <p class="section__text description">
+                  Регулярне виконання цієї практики значно знижує ризик виникнення ПТСР і допомагає впоратися з негативними емоціями.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">3</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Медитація «Розслаблення та внутрішній спокій»</span>
+                </p>
+                <p class="section__text description">
+                  З'явиться більше врівноваженості, внутрішнього спокою та відчуття опори.
+                </p>
+              </div>
+            </li>
+
+            <li class="section__item">
+              <div class="number">4</div>
+              <div class="content">
+                <p class="section__text content">
+                  <span>Техніка "Емоційне благополуччя"</span>
+                </p>
+                <p class="section__text description">
+                  Регулярна практика дозволяє розкрити доступ до джерела натхнення та радості всередині себе як до сили, яка допомагає долати будь-які складнощі. З'явиться більше впевненості у житті та завтрашньому дні. Збільшиться концентрація та уважність.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <img 
+          class="section__text--img"
+          src="./img/photo/technique.jpg" 
+          alt="Pобота з травмою у контексті воєнного часу"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="details section-container" id="details">
+      <div class="section__quote">
+        <h1>
+          Деталі курсу
+        </h1>
+        <span></span>
+      </div>
+
+      <p class="section__text">
+        Ми регулярно відкриваємо нові  набори до груп, тому приєднуйтесь до чату і ми проінформуємо Вас про початок.
+      </p>
+
+      <div class="section__container">
+        <div class="section__text--and-icon">
+          <div class="section__icon">🔔</div>
+          <p class="section__text">
+            Як проходитимуть заняття на курсі:
+          </p>
+        </div>
+
+        <div class="section__text--container">
+          <ul class="section__list">
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Це 7 онлайн зустрічей кожні 4 -7 днів тривалістю 1,5-2 години</span>
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Додаткові підтримувальні практики 1 раз на тиждень тривалістю 15-20 хв</span>
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Щоденник відстеження внутрішнього стану.</span>
+              </p>
+            </li>
+
+            <li class="section__item">
+              <div class="number">✔️</div>
+
+              <p class="section__text content">
+                <span>Заняття безкоштовні</span>
+              </p>
+            </li>
+          </ul>
+
+          <img 
+          class="section__text--img"
+          src="./img/photo/details.jpg" 
+          alt="Pобота з травмою у контексті воєнного часу"
+          >
+        </div>
+      </div>
     </section>
 
 
