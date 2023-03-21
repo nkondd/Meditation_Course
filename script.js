@@ -1,3 +1,31 @@
+const swiper = new Swiper('.swiper', {
+  //   autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+slidesPerView: 1,
+spaceBetween: 10,
+// using "ratio" endpoints
+breakpoints: {
+'@1.00': {
+  slidesPerView: 2,
+  spaceBetween: 20,
+},
+'@1.50': {
+  slidesPerView: 3,
+  spaceBetween: 20,
+},
+}
+});
+
 //Select the <a> element
 const itemButton = document.querySelector('.item__button');
 
@@ -34,3 +62,6 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+// Slider
+

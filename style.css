@@ -92,11 +92,13 @@ nav .nav-bar .logo a {
   text-decoration: none;
   padding: 5px;
   transition: color .2s;
+  
 }
 
 .nav-links li a:hover {
   color: var(--yellow-color);
 }
+
 
 @media (max-width: 790px) {
   nav .nav-bar {
@@ -480,6 +482,77 @@ nav .nav-bar .logo a {
   margin-top: 5px;
 }
 
+.slider {
+  margin-top: 20px;
+  height: 85vh;
+  max-width: 1000px;
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #BCD5D6;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img {
+  margin-top: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.swiper-pagination {
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+.swiper-button-prev {
+  margin-left: 20px;
+  z-index: 100;
+}
+
+.swiper-button-next {
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .slider {
+    margin-top: 10px;
+    max-width: 320px;
+  }
+
+  .swiper {
+    width: 75%;
+  }
+
+  .swiper-button-prev {
+    margin-left: 5px;
+  }
+
+.swiper-button-next {
+  margin-right: 5px;
+}
+}
+
+
+
 @media (min-width: 500px) {
   .section__quote {
     font-size: 16px;
@@ -508,6 +581,8 @@ nav .nav-bar .logo a {
 
   .section__personal {
     font-size: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .section__text {
