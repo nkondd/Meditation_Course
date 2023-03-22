@@ -39,7 +39,7 @@ nav {
 nav .nav-bar {
   position: relative;
   height: 100%;
-  max-width: 1000px;
+  max-width: 1280px;
   width: 100%;
   background-color: var(--blue-color);
   margin: 0 auto;
@@ -102,7 +102,7 @@ nav .nav-bar .logo a {
 
 @media (max-width: 790px) {
   nav .nav-bar {
-    max-width: 400px;
+    max-width: 600px;
   }
 
   nav .nav-bar .sidebarOpen {
@@ -173,6 +173,7 @@ nav .nav-bar .logo a {
 
 .item__button {
   display: none; 
+  font-weight: 600;
 }
 
 @media (min-height: 100vh) {
@@ -333,7 +334,7 @@ nav .nav-bar .logo a {
 
 .section-container {
   padding-top: 10px;
-  max-width: 1000px;
+  max-width: 1280px;
 
   margin: 10px auto;
 
@@ -397,7 +398,7 @@ nav .nav-bar .logo a {
 
 .section__text {
   font-size: 24px;
-  margin: 0px 15px;
+  margin: 10px 15px;
 }
 
 .section__text span {
@@ -430,6 +431,8 @@ nav .nav-bar .logo a {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
+  margin-top: 13px;
+  align-self: baseline;
 }
 
 .content {
@@ -453,6 +456,7 @@ nav .nav-bar .logo a {
   height: 350px;
   border-radius: 50%;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .section__text--img:hover {
@@ -483,21 +487,42 @@ nav .nav-bar .logo a {
 }
 
 .slider {
+  position: relative;
   margin-top: 20px;
-  height: 85vh;
-  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 550px;
+  width: 92%;
+}
+
+.slider2 {
+  height: 450px;
+}
+
+.slider .swiper2 {
+  height: 400px;
+}
+
+.slider .swiper1 {
+  height: 500px;
 }
 
 .swiper {
-  width: 80%;
+  width: 85%;
+  height: 100%;
+}
+
+.swiper--reviews {
+  width: 85%;
   height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #BCD5D6;
-  border-radius: 40px;
+  background: rgba(188, 213, 214, 0.5);
+  border-radius: 26px;
+  box-shadow:  10px 10px 5px -10px rgba(0,0,0,0.13);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,49 +534,102 @@ nav .nav-bar .logo a {
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-zoom-container {
+  overflow: hidden;
+}
+
+.swiper-img {
+  width: 200px;
+  height: 200px;
   margin-top: 10px;
   display: block;
-  width: 20px;
-  height: 20px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.swiper-pagination {
-  margin-bottom: 10px;
-  z-index: 100;
+.reviews-swiper-img {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  width: auto;
+  height: 350px;
+}
+
+.swiper-title {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+.swiper-location {
+  margin-top: 6px;
+  font-size: 18px;
+  max-width: 300px;
+}
+
+.swiper-text {
+  margin-top: 6px;
+  max-width: 300px;
+  font-weight: 500;
+}
+
+.read-more {
+  position: fixed;
+  margin-top: 420px;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--yellow-color);
+  border-radius: 8px;
+  color: var(--blue-color);
+}
+
+.read-more:hover {
+  background-color: var(--red-color);
+  color: var(--text-color);
 }
 
 .swiper-button-prev {
   margin-left: 20px;
-  z-index: 100;
 }
 
 .swiper-button-next {
   margin-right: 20px;
 }
 
-@media (max-width: 500px) {
+.swiper-button-prev--reviews {
+  margin-left: 20px;
+}
+
+.swiper-button-next--reviews {
+  margin-right: 20px;
+}
+
+@media (max-width: 580px) {
   .slider {
     margin-top: 10px;
-    max-width: 320px;
   }
 
   .swiper {
     width: 75%;
   }
 
+  .swiper--reviews {
+    width: 75%;
+  }
+
+
+  .swiper-text {
+    font-size: 16px;
+  }
+
   .swiper-button-prev {
-    margin-left: 5px;
+    margin-left: -10px;
   }
 
 .swiper-button-next {
-  margin-right: 5px;
+  margin-right: -10px;
 }
 }
-
-
 
 @media (min-width: 500px) {
   .section__quote {
@@ -581,8 +659,6 @@ nav .nav-bar .logo a {
 
   .section__personal {
     font-size: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
   }
 
   .section__text {

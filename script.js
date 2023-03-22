@@ -1,27 +1,55 @@
-const swiper = new Swiper('.swiper', {
-  //   autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
+const swiper1 = new Swiper('.swiper1', {
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
     pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination1",
     clickable: true,
   },
 navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
+nextEl: '.swiper-button-next1',
+prevEl: '.swiper-button-prev1',
 },
 slidesPerView: 1,
 spaceBetween: 10,
 // using "ratio" endpoints
 breakpoints: {
-'@1.00': {
+910: {
   slidesPerView: 2,
   spaceBetween: 20,
 },
-'@1.50': {
+1200: {
   slidesPerView: 3,
   spaceBetween: 20,
+},
+}
+});
+
+const swiper2 = new Swiper('.swiper2', {
+  autoplay: {
+  delay: 9000,
+  disableOnInteraction: false,
+},
+pagination: {
+  el: ".swiper-pagination2",
+  clickable: true,
+},
+navigation: {
+nextEl: '.swiper-button-next2',
+prevEl: '.swiper-button-prev2',
+},
+slidesPerView: 1,
+spaceBetween: 10,
+// using "ratio" endpoints
+breakpoints: {
+910: {
+slidesPerView: 2,
+spaceBetween: 20,
+},
+1200: {
+slidesPerView: 3,
+spaceBetween: 20,
 },
 }
 });
