@@ -5,7 +5,7 @@ const swiper1 = new Swiper('.swiper1', {
   },
     pagination: {
     el: ".swiper-pagination1",
-    clickable: true,
+    clickable: false,
   },
 navigation: {
 nextEl: '.swiper-button-next1',
