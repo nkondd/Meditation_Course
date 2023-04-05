@@ -87,7 +87,7 @@ nav .nav-bar .logo a {
   align-items: center;
   text-align: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
   padding: 5px;
@@ -100,7 +100,7 @@ nav .nav-bar .logo a {
 }
 
 
-@media (max-width: 790px) {
+@media (max-width: 900px) {
   nav .nav-bar {
     max-width: 600px;
   }
@@ -181,7 +181,7 @@ nav .nav-bar .logo a {
     display: block;
     border: 2px solid transparent;
     padding: 8px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 0.35em;
     box-sizing: border-box;
     text-decoration: none;
@@ -244,11 +244,13 @@ nav .nav-bar .logo a {
 
 .header__title {
   font-weight: 500;
-  font-size: 35px;
+  font-size: 40px;
   letter-spacing: 1.5px;
   text-align: center;
 
   color: #fff;
+
+  margin-bottom: 10px;
 }
 
 .button__join {
@@ -256,6 +258,8 @@ nav .nav-bar .logo a {
   margin-top: 10px;
   font-size: 20px;
   letter-spacing: 1.5px;
+
+  margin-bottom: 10px;
 }
 
 .arrows {
@@ -352,6 +356,10 @@ nav .nav-bar .logo a {
   margin-bottom: 10px;
 }
 
+.section__quote .margin-top {
+  margin-top: 70px;
+}
+
 .section__quote h1:first-child {
   font-weight: 500;
 }
@@ -401,6 +409,10 @@ nav .nav-bar .logo a {
   margin: 10px 15px;
 }
 
+.section__team {
+  margin-bottom: 10px;
+}
+
 .section__text span {
   font-weight: 500;
   color: #000;
@@ -411,6 +423,10 @@ nav .nav-bar .logo a {
   list-style: none;
   max-width: 55%;
   padding: 0;
+}
+
+.section__list, .list__team {
+  max-width: 100%;
 }
 
 .section__item {
@@ -459,6 +475,11 @@ nav .nav-bar .logo a {
   margin-top: 10px;
 }
 
+/* .img__team {
+  width: 300px;
+  height: 300px;
+} */
+
 .section__text--img:hover {
   box-shadow: 0 0 0 2px rgba(85, 133, 135, 0.3);
 }
@@ -499,7 +520,15 @@ nav .nav-bar .logo a {
   height: 400px;
 }
 
+.slider3 {
+  height: 400px;
+}
+
 .slider .swiper2 {
+  height: 400px;
+}
+
+.slider .swiper3 {
   height: 400px;
 }
 
@@ -605,7 +634,7 @@ nav .nav-bar .logo a {
   margin-right: 20px;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
   .slider {
     margin-top: 10px;
   }
@@ -641,6 +670,8 @@ nav .nav-bar .logo a {
   .section__personal {
     font-size: 14px;
     padding: 10px 5px;
+
+    max-width: 70%;
   }
 
   .section__quote-personal--img {
@@ -684,6 +715,10 @@ nav .nav-bar .logo a {
     align-items: center;
   }
 
+  .container__team {
+    flex-direction: column-reverse;
+  }
+
   .section__text:last-child {
     margin-bottom: 20px;
   }
@@ -703,8 +738,7 @@ nav .nav-bar .logo a {
 }
 
 .footer {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
   margin-top: 2em;
   padding: 30px 30px 20px 30px;
   color: var(--yellow-color);
@@ -718,13 +752,15 @@ nav .nav-bar .logo a {
 
 .footer__logo {
   position: absolute;
-  width: 100px;
-  height: 40px;
+  width: 200px;
+  height: 80px;
+
+  justify-self: center;
 }
 
 .nav__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .footer ul {
@@ -734,6 +770,9 @@ nav .nav-bar .logo a {
 
 .footer li {
   line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
 }
 
 .footer a {
@@ -742,12 +781,19 @@ nav .nav-bar .logo a {
 
 .footer__nav {
   display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
+  justify-content: space-around;
+
+  margin-top: 100px;
 }
 
 .footer__nav > * {
   flex: 1 50%;
   margin-right: 1.25em;
+}
+
+.nav__title {
+  margin-top: 10px;
 }
 
 .nav__ul a {
@@ -759,37 +805,69 @@ nav .nav-bar .logo a {
 }
 
 .legal {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   color: var(--text-color);
-}
-  
-.legal__links {
-  display: flex;
+  margin-top: 10px;
   align-items: center;
 }
 
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
 }
 
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
+.bx {
+  color: var(--text-color);
+}
+
+.bx:hover {
+  color: var(--yellow-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__nav {
+    flex-direction: row;
+
+    margin-top: auto;
   }
 
   .footer__logo {
     position: relative;
     flex: 0.6 0px;
-    margin-right: 1.25em;
     margin-bottom: 2em;
   }
   
-  .footer__nav {
-    flex: 2 0px;
+  .legal {
+    flex-direction: row;
+    margin: 0px 100px;
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    margin-top: 0;
   }
 }
 
+.team__links {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.team__links:hover {
+  color: var(--red-color);
+}
+
+.children__body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),
+  url(./img/photo/children/children_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blend-mode: soft-light; */
+}
