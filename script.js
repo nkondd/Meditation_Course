@@ -27,6 +27,7 @@ breakpoints: {
 });
 
 const swiper2 = new Swiper('.swiper2', {
+  zoom: true,
   autoplay: {
   delay: 9000,
   disableOnInteraction: false,

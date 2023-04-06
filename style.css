@@ -352,7 +352,7 @@ nav .nav-bar .logo a {
 
 .section__quote {
   text-align: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 10px;
 }
 
@@ -664,7 +664,7 @@ nav .nav-bar .logo a {
 @media (min-width: 500px) {
   .section__quote {
     font-size: 16px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .section__personal {
@@ -758,6 +758,10 @@ nav .nav-bar .logo a {
   justify-self: center;
 }
 
+.logoFooter .logo__img {
+  margin-left: 0;
+}
+
 .nav__title {
   font-weight: 600;
   font-size: 20px;
@@ -782,7 +786,7 @@ nav .nav-bar .logo a {
 .footer__nav {
   display: flex;
 	flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
 
   margin-top: 100px;
 }
@@ -832,7 +836,7 @@ nav .nav-bar .logo a {
 @media screen and (min-width: 1000px) {
   .footer__nav {
     flex-direction: row;
-
+    gap: 100px;
     margin-top: auto;
   }
 
@@ -856,7 +860,7 @@ nav .nav-bar .logo a {
 .team__links {
   color: var(--blue-color);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .team__links:hover {
