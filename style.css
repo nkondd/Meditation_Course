@@ -388,7 +388,7 @@ nav .nav-bar .logo a {
 }
 
 .section__quote-personal--img {
-  background-image: url(./img/photo/home_quote.png);
+  background-image: url(./img/photo/children/1.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -465,6 +465,8 @@ nav .nav-bar .logo a {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+
+  gap: 60px;
 }
 
 .section__text--img {
@@ -713,10 +715,7 @@ nav .nav-bar .logo a {
   .section__text--container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .container__team {
-    flex-direction: column-reverse;
+    gap: 10px;
   }
 
   .section__text:last-child {
@@ -868,10 +867,17 @@ nav .nav-bar .logo a {
 }
 
 .children__body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
   url(./img/photo/children/children_background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-blend-mode: soft-light; */
+}
+
+.children__text--container {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
