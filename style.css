@@ -881,3 +881,59 @@ nav .nav-bar .logo a {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.container {  
+  padding: 30px;  
+  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.6);  
+  border-radius: 10px;
+
+  color: var(--text-color--dark-);
+  font-size: 20px;
+}  
+  
+input[type=text], textarea {  
+  font-size: 20px;
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: 1px solid var(--blue-color);  
+  border-radius: 5px;
+  background: var(--white-color);  
+}  
+
+input[type=text]:focus, textarea:focus {  
+  background-color: rgba(180, 233, 253, 0.5);  
+  outline: none;  
+}  
+
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+} 
+
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;  
+  opacity: 0.9;  
+}  
+
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+
+.form__body {
+  background-image: linear-gradient(rgba(196, 196, 196, 0.2), rgba(255, 255, 255, 0.5)),
+  url(./img/photo/children/1.jpg);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
