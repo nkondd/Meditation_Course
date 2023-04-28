@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Для дітей</title>
+  <title>Форма Реєстрації</title>
 
   <link rel="icon" type="image/x-icon" href="./img/ icon.ico" />
   <link rel="stylesheet" href="./style.css" />
@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-
 </head>
 
 <body class="form__body">
@@ -23,8 +22,12 @@
     <div class="nav-bar">
       <i class="bx bx-menu sidebarOpen"></i>
       <span class="logo navLogo">
-        <a href="#">
-          <img class="logo__img" src="./img/logo.png" alt="Compassion & Wisdom in Ukraine" />
+        <a href="/index.html">
+          <img
+            class="logo__img"
+            src="./img/logo.png"
+            alt="Compassion & Wisdom in Ukraine"
+          />
         </a>
       </span>
 
@@ -33,10 +36,15 @@
           <span class="logo"><a href="#"></a></span>
           <i class="bx bx-x siderbarClose"></i>
         </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html">На головну</a></li>
+          <li><a href="#footer">Контакти</a></li>
+        </ul>
       </div>
 
-      <a class="item__button" href="">
-        <span class="item__buttonspan">Зареєструватися</span>
+      <a class="item__button" href="./form.html" style="visibility: hidden;">
+        <span class="item__buttonspan"> Реєстрація </span>
       </a>
     </div>
   </nav>
@@ -48,34 +56,34 @@
     </div>
 
     <div class="section__container">
-        <form>  
-          <div class="container">  
-            <hr>  
-            <label>
-              Ім'я:
-            </label>   
-            <input type="text" name="name" placeholder= "Ім'я" required />   
-            
-            <label for="email">
-              Електронна пошта:
-            </label>  
-            <input type="text" placeholder="example@gmail.com" name="email" required>  
-            
-            <label>
-              Номер телефону:
-            </label>    
-            <input type="text" name="phone" placeholder="+380" required>   
-            
-            <label>   
-              Якщо бажаєте, опишіть свій запит або проблему, з якою хочете впоратися завдяки курсу:
-            </label>
-            <textarea cols="100" rows="20" placeholder="" required></textarea>
+      <form class="myForm">  
+        <div class="container">  
+          <hr>  
+          <label>
+            Ім'я:
+          </label>   
+          <input type="text" name="name" placeholder= "Ім'я" maxlength="30" required />   
+          
+          <label for="email">
+            Електронна пошта:
+          </label>  
+          <input type="email" placeholder="example@gmail.com" name="email" required>  
+          
+          <label>
+            Номер телефону:
+          </label>    
+          <input type="text" name="phone" placeholder="+380-xx-xxx-xx-xx" required>   
+          
+          <label>   
+            Якщо бажаєте, опишіть свій запит або проблему, з якою хочете впоратися завдяки курсу:
+          </label>
+          <textarea cols="100" rows="20" placeholder=""></textarea>
 
-            <button type="submit" class="registerbtn">
-              Зареєструватися
-            </button>    
-          </div>
-          </form>  
+          <button type="submit" class="registerbtn" value="Submit">
+            Зареєструватися
+          </button>
+        </div>
+      </form>  
     </div>
   </section>
 

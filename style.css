@@ -613,6 +613,7 @@ nav .nav-bar .logo a {
   background-color: var(--yellow-color);
   border-radius: 8px;
   color: var(--blue-color);
+  width: 150px;
 }
 
 .read-more:hover {
@@ -892,7 +893,7 @@ nav .nav-bar .logo a {
   font-size: 20px;
 }  
   
-input[type=text], textarea {  
+input, textarea {  
   font-size: 20px;
   width: 100%;  
   padding: 15px;  
@@ -903,7 +904,7 @@ input[type=text], textarea {
   background: var(--white-color);  
 }  
 
-input[type=text]:focus, textarea:focus {  
+input:focus, textarea:focus {  
   background-color: rgba(180, 233, 253, 0.5);  
   outline: none;  
 }  
@@ -936,4 +937,33 @@ hr {
   background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Стилі для вспливаючого вікна та затемнення */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid var(--blue-color);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
 }

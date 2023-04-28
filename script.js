@@ -100,3 +100,37 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+// Отримуємо посилання на форму і додаємо обробник події
+const form = document.querySelector('.myForm');
+form.addEventListener('submit', function(event) {
+  // Зупиняємо стандартну поведінку форми, щоб сторінка не перезавантажувалася
+  event.preventDefault();
+
+  form.reset();
+
+  // Створюємо вспливаюче вікно
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  const modalContent = document.createElement('div');
+  modalContent.classList.add('modal-content');
+  const modalText = document.createElement('p');
+  modalText.textContent = `Дякуємо за реєстрацію! Ми зв’яжемося з вами. Перевіряйте поштову скриньку та повідомлення у Телеграмм.`;
+  modalContent.appendChild(modalText);
+  modal.appendChild(modalContent);
+  document.body.appendChild(modal);
+
+  // Додаємо затемнення для решти сторінки
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+  document.body.appendChild(overlay);
+
+  // Видалення вспливаючого вікна та затемнення при кліку на них
+  function closeModal() {
+    modal.remove();
+    overlay.remove();
+  }
+
+  modal.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+});
