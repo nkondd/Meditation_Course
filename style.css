@@ -10,6 +10,7 @@
   --blue-color: rgb(85, 133, 135);
   --red-color: #885050;
   --yellow-color: #faf0a6;
+  --green-color: #4CAF50;
 }
   
 * {
@@ -100,9 +101,9 @@ nav .nav-bar .logo a {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 3000px) {
   nav .nav-bar {
-    max-width: 600px;
+    max-width: 1000px;
   }
 
   nav .nav-bar .sidebarOpen {
@@ -112,7 +113,8 @@ nav .nav-bar .logo a {
   .menu {
     position: fixed;
     height: 100%;
-    width: 320px;
+    width: 100%;
+    min-width: 320px;
     left: -100%;
     top: 0;
     padding: 20px;
@@ -155,9 +157,10 @@ nav .nav-bar .logo a {
   }
 
   .nav-links li a:hover {
-    background-color: var(--red-color);
+    background-color: rgba(100, 166, 169, 0.3);
     border-radius: 5px;
-    width: 200px;
+    min-width: 320px;
+    width: auto;
   }
 }
 
@@ -171,12 +174,32 @@ nav .nav-bar .logo a {
   width: 100%;
 }
 
+.button_support {
+  font-weight: 600;
+}
+
 .item__button {
   display: none; 
   font-weight: 600;
 }
 
 @media (min-height: 100vh) {
+  .button_support {
+    display: block;
+    border: 2px solid transparent;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 0.35em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--red-color);
+    min-width: 300px;
+  }
+
   .item__button {
     display: block;
     border: 2px solid transparent;
@@ -186,7 +209,7 @@ nav .nav-bar .logo a {
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(85, 133, 135);
     text-align: center;
     transition: background-color 0.3s;
@@ -199,7 +222,13 @@ nav .nav-bar .logo a {
   }
 }
 
-.container {
+@media (max-width: 500px) {
+  .button_support, .item__button {
+    font-size: 14px;
+  }
+}
+
+.container_header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -210,6 +239,17 @@ nav .nav-bar .logo a {
   padding-bottom: 90px;
 
   background-color: rgba(100, 166, 169, 0.3);
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links li .button_support:hover {
+  background-color: var(--green-color);
+  color: var(--text-color);
+  transition: all .4s ease-in-out;
 }
 
 .header {
@@ -360,6 +400,10 @@ nav .nav-bar .logo a {
   margin-top: 70px;
 }
 
+.section__container .margin-top {
+  margin-top: 70px;
+}
+
 .section__quote h1:first-child {
   font-weight: 500;
 }
@@ -464,7 +508,7 @@ nav .nav-bar .logo a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   gap: 60px;
 }
@@ -507,6 +551,10 @@ nav .nav-bar .logo a {
 .section__text.description {
   font-size: 19px;
   margin-top: 5px;
+}
+
+.section__container {
+  min-width: 100%;
 }
 
 .slider {
@@ -915,7 +963,7 @@ hr {
 } 
 
 .registerbtn {  
-  background-color: #4CAF50;  
+  background-color: var(--green-color);  
   color: white;  
   padding: 16px 20px;  
   margin: 8px 0;  
