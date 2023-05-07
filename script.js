@@ -19,7 +19,7 @@ breakpoints: {
   slidesPerView: 2,
   spaceBetween: 20,
 },
-1200: {
+1220: {
   slidesPerView: 3,
   spaceBetween: 20,
 },
@@ -48,7 +48,7 @@ breakpoints: {
 slidesPerView: 2,
 spaceBetween: 20,
 },
-1200: {
+1220: {
 slidesPerView: 3,
 spaceBetween: 20,
 },
@@ -77,7 +77,7 @@ breakpoints: {
 slidesPerView: 2,
 spaceBetween: 20,
 },
-1200: {
+1220: {
 slidesPerView: 3,
 spaceBetween: 20,
 },
